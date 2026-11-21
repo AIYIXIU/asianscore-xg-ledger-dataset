@@ -24,6 +24,54 @@ Every match projection is hashed with **SHA-256 prior to kickoff** (`inputHash`)
 3. `poisson_xg_demo.py` — Zero-dependency Python implementation of the **Bivariate Poisson + Dixon-Coles** expected goals (xG) scoreline matrix model.
 4. `devig_and_audit.py` — Zero-dependency Proportional & Power market de-vigging plus CSV SHA-256 / Brier Score auditor.
 
+## Public REST API Documentation (No Auth, HTTPS, CORS `*`)
+
+The live prediction ledger is exposed as a free, keyless JSON endpoint:
+
+- **Endpoint:** `GET https://asianscore.com/api/ledger`
+- **Authentication:** None (`No`)
+- **HTTPS:** Yes
+- **CORS:** `Access-Control-Allow-Origin: *` (`Yes`)
+
+### Example Request
+
+```bash
+curl -s "https://asianscore.com/api/ledger" | head -c 600
+```
+
+### Response Schema
+
+```json
+{
+  "accuracy": {
+    "totalLocked": 302,
+    "sampleSize": 206,
+    "correct": 127,
+    "hitRatePct": 61.65,
+    "averageBrierScore": 0.166
+  },
+  "byLeague": [
+    { "league": "NBA", "settled": 22, "correct": 17, "hitRatePct": 77.27, "avgBrier": 0.159 }
+  ],
+  "recentSettled": [
+    {
+      "matchId": "espn:401841175",
+      "league": "巴甲",
+      "kickoffAt": "2026-11-14T23:30:00Z",
+      "lockedAt": "2026-11-14T23:20:05Z",
+      "inputHash": "6808bd38f6a294b69dfc11b3aa8a627192eb8c444b08952071a2de2c8f37b0b0",
+      "probHome": 0.184033,
+      "probDraw": 0.224431,
+      "probAway": 0.591536,
+      "actualScore": "0 : 2",
+      "isHit": true,
+      "brierScore": 0.083694
+    }
+  ],
+  "upcomingLocked": []
+}
+```
+
 ## Live Open API & Free Web Tools (No Login Required)
 
 - **Live JSON Ledger API (CORS `*`)**: `https://asianscore.com/api/ledger`
