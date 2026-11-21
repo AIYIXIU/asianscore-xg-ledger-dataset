@@ -1,0 +1,19 @@
+{
+  "title": "AsianScore Football & NBA Pre-Match xG Prediction Ledger (SHA-256 Verified)",
+  "id": "asianscore/football-nba-xg-prediction-ledger",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "subtitle": "Cryptographically locked football and NBA pre-match win probabilities, Brier scores, and xG modeling benchmark.",
+  "keywords": [
+    "sports",
+    "football",
+    "nba",
+    "expected-goals",
+    "poisson-distribution",
+    "sports-analytics",
+    "forecasting"
+  ]
+}
