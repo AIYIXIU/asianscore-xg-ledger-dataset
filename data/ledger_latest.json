@@ -1,0 +1,1772 @@
+{
+  "accuracy": {
+    "averageBrierScore": 0.1783,
+    "avgClvPct": 0,
+    "clvSampleSize": 0,
+    "correct": 144,
+    "eligibleUpcoming": 105,
+    "hitRate": 0.5691699604743083,
+    "hitRatePct": 56.92,
+    "pendingCount": 102,
+    "sampleSize": 253,
+    "totalLocked": 355
+  },
+  "byLeague": [
+    {
+      "league": "欧国联",
+      "settled": 33,
+      "correct": 21,
+      "hitRatePct": 63.64,
+      "avgBrier": 0.1698
+    },
+    {
+      "league": "非预赛",
+      "settled": 23,
+      "correct": 15,
+      "hitRatePct": 65.22,
+      "avgBrier": 0.135
+    },
+    {
+      "league": "NBA",
+      "settled": 22,
+      "correct": 17,
+      "hitRatePct": 77.27,
+      "avgBrier": 0.159
+    },
+    {
+      "league": "美职联",
+      "settled": 17,
+      "correct": 11,
+      "hitRatePct": 64.71,
+      "avgBrier": 0.1804
+    },
+    {
+      "league": "日职联",
+      "settled": 15,
+      "correct": 4,
+      "hitRatePct": 26.67,
+      "avgBrier": 0.2553
+    },
+    {
+      "league": "英冠",
+      "settled": 14,
+      "correct": 7,
+      "hitRatePct": 50,
+      "avgBrier": 0.2071
+    },
+    {
+      "league": "意甲",
+      "settled": 11,
+      "correct": 7,
+      "hitRatePct": 63.64,
+      "avgBrier": 0.1552
+    },
+    {
+      "league": "西甲",
+      "settled": 11,
+      "correct": 6,
+      "hitRatePct": 54.55,
+      "avgBrier": 0.1847
+    },
+    {
+      "league": "英超",
+      "settled": 10,
+      "correct": 4,
+      "hitRatePct": 40,
+      "avgBrier": 0.2112
+    },
+    {
+      "league": "德甲",
+      "settled": 9,
+      "correct": 7,
+      "hitRatePct": 77.78,
+      "avgBrier": 0.1435
+    },
+    {
+      "league": "法甲",
+      "settled": 9,
+      "correct": 5,
+      "hitRatePct": 55.56,
+      "avgBrier": 0.1739
+    },
+    {
+      "league": "土超",
+      "settled": 8,
+      "correct": 7,
+      "hitRatePct": 87.5,
+      "avgBrier": 0.1303
+    }
+  ],
+  "generatedAt": "2026-11-21T18:29:21Z",
+  "lockRule": "官方 ESPN 赛程数据绑定同场 eventId、开球时间、联赛与主客队；开赛前 T-10 至 T-8 分钟窗口一次性锁定并生成 SHA-256 输入指纹，赛后依据官方终场比分自动结算",
+  "recentSettled": [
+    {
+      "matchId": "espn:401874981",
+      "sourceEventId": "401874981",
+      "league": "意甲",
+      "homeTeam": "拉齐奥",
+      "awayTeam": "莱切",
+      "kickoffAt": "2026-11-21T14:00:00Z",
+      "lockedAt": "2026-11-21T13:50:03Z",
+      "inputHash": "40185b1aaf7396de9f8a2ee454e9b207f0da064126d01c0a26e2d39e2d12dce2",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 7.5,
+        "draw": 4.8,
+        "home": 1.3389830508474576
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.686112995445295,
+      "probabilities": {
+        "away": 0.12249248958232385,
+        "draw": 0.19139451497238102,
+        "home": 0.686112995445295
+      },
+      "actualScore": "3 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.050054
+    },
+    {
+      "matchId": "espn:401875056",
+      "sourceEventId": "401875056",
+      "league": "意甲",
+      "homeTeam": "科莫",
+      "awayTeam": "卡利亚里",
+      "kickoffAt": "2026-11-21T14:00:00Z",
+      "lockedAt": "2026-11-21T13:50:03Z",
+      "inputHash": "2f12961428b6048d13bcfb691e1f3e4ba989d8867193b3d94af0ed5abcf0549a",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 8,
+        "draw": 5.25,
+        "home": 1.2857142857142856
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.7114337568058077,
+      "probabilities": {
+        "away": 0.11433756805807621,
+        "draw": 0.17422867513611612,
+        "home": 0.7114337568058077
+      },
+      "actualScore": "2 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.042233
+    },
+    {
+      "matchId": "espn:401888369",
+      "sourceEventId": "401888369",
+      "league": "土超",
+      "homeTeam": "Amed SFK",
+      "awayTeam": "里泽体育",
+      "kickoffAt": "2026-11-21T13:00:00Z",
+      "lockedAt": "2026-11-21T12:50:04Z",
+      "inputHash": "2002a35f845d4902fa5189f13956d754aab3b53a404f97684777fbad7f8aef82",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 4.2,
+        "draw": 4,
+        "home": 1.6896551724137931
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5480314960629921,
+      "probabilities": {
+        "away": 0.22047244094488186,
+        "draw": 0.23149606299212597,
+        "home": 0.5480314960629921
+      },
+      "actualScore": "0 : 2",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.320531
+    },
+    {
+      "matchId": "espn:401882806",
+      "sourceEventId": "401882806",
+      "league": "西甲",
+      "homeTeam": "阿拉维斯",
+      "awayTeam": "拉科鲁尼亚",
+      "kickoffAt": "2026-11-21T13:00:00Z",
+      "lockedAt": "2026-11-21T12:50:04Z",
+      "inputHash": "b3777a335d407d4e0341810f775fdddfd8e611d7e8be316a16b5bbd32bae75c8",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.55,
+        "draw": 3.4,
+        "home": 2.05
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4586301890377125,
+      "probabilities": {
+        "away": 0.26484278521896076,
+        "draw": 0.27652702574332666,
+        "home": 0.4586301890377125
+      },
+      "actualScore": "3 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.146563
+    },
+    {
+      "matchId": "espn:401880741",
+      "sourceEventId": "401880741",
+      "league": "英甲",
+      "homeTeam": "布莱克浦",
+      "awayTeam": "维冈竞技",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "8c748296f0c73e3a4a1e02538d439cc83c601dfb750ee7c42ff0f3fdc0d72782",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.4,
+        "draw": 3.55,
+        "home": 1.9523809523809523
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.47076631625868276,
+      "probabilities": {
+        "away": 0.27032799673117636,
+        "draw": 0.2589056870101408,
+        "home": 0.47076631625868276
+      },
+      "actualScore": "1 : 2",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.273691
+    },
+    {
+      "matchId": "espn:401880155",
+      "sourceEventId": "401880155",
+      "league": "英冠",
+      "homeTeam": "诺维奇",
+      "awayTeam": "卡迪夫城",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "34e18810095219ce471e662d0ae285ec97cb7b0b9f83032fb9abd2a0dcda0df3",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.9,
+        "draw": 4.4,
+        "home": 1.7142857142857144
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5466957946477334,
+      "probabilities": {
+        "away": 0.24030584380120157,
+        "draw": 0.212998361551065,
+        "home": 0.5466957946477334
+      },
+      "actualScore": "2 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.102867
+    },
+    {
+      "matchId": "espn:401880153",
+      "sourceEventId": "401880153",
+      "league": "英冠",
+      "homeTeam": "南安普顿",
+      "awayTeam": "Derby",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "6ac6322b73bdc2cc7712c7a746d98cfb3faab326de894590fcfb0187aeb1800c",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 7,
+        "draw": 5,
+        "home": 1.392156862745098
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.676905574516496,
+      "probabilities": {
+        "away": 0.13462267728479332,
+        "draw": 0.18847174819871065,
+        "home": 0.676905574516496
+      },
+      "actualScore": "2 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.052678
+    },
+    {
+      "matchId": "espn:401880731",
+      "sourceEventId": "401880731",
+      "league": "英甲",
+      "homeTeam": "雷丁",
+      "awayTeam": "布罗姆利",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "710d56a1f65eb44e6ddefe705305d09157b287c02de777a40ea9d9da268b920f",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 7.5,
+        "draw": 5.5,
+        "home": 1.3125
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.7073954983922829,
+      "probabilities": {
+        "away": 0.12379421221864952,
+        "draw": 0.16881028938906753,
+        "home": 0.7073954983922829
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.432214
+    },
+    {
+      "matchId": "espn:401879233",
+      "sourceEventId": "401879233",
+      "league": "英超",
+      "homeTeam": "曼城",
+      "awayTeam": "富勒姆",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "96903e2f4a870365a6955421fc77dd55c8f8d26bfe035da9f8836b0aca5bf697",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 7,
+        "draw": 5,
+        "home": 1.4
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.6756756756756757,
+      "probabilities": {
+        "away": 0.13513513513513511,
+        "draw": 0.1891891891891892,
+        "home": 0.6756756756756757
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.377404
+    },
+    {
+      "matchId": "espn:401880156",
+      "sourceEventId": "401880156",
+      "league": "英冠",
+      "homeTeam": "米尔沃尔",
+      "awayTeam": "女王公园巡游者",
+      "kickoffAt": "2026-11-21T12:30:00Z",
+      "lockedAt": "2026-11-21T12:20:04Z",
+      "inputHash": "a69bf668b7f57ef33b83228924b7e41b980a37f9cf2cc97a741467c6004a538f",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.65,
+        "draw": 3.45,
+        "home": 2.5
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.3748078302756995,
+      "probabilities": {
+        "away": 0.3535922927129241,
+        "draw": 0.27159987701137644,
+        "home": 0.3748078302756995
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.210697
+    },
+    {
+      "matchId": "espn:401888247",
+      "sourceEventId": "401888247",
+      "league": "土超",
+      "homeTeam": "根克勒比利吉",
+      "awayTeam": "Gaziantep",
+      "kickoffAt": "2026-11-21T10:30:00Z",
+      "lockedAt": "2026-11-21T10:20:04Z",
+      "inputHash": "c79c6bac6459d24ee8ed4fd651af2e0d0cf088d410366d3622598c42479b4d98",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.8,
+        "draw": 3.4,
+        "home": 2.3
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.400336417157275,
+      "probabilities": {
+        "away": 0.328847771236333,
+        "draw": 0.2708158116063919,
+        "home": 0.400336417157275
+      },
+      "actualScore": "1 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.180359
+    },
+    {
+      "matchId": "espn:401892135",
+      "sourceEventId": "401892135",
+      "league": "澳超",
+      "homeTeam": "Brisbane",
+      "awayTeam": "悉尼FC",
+      "kickoffAt": "2026-11-21T08:40:00Z",
+      "lockedAt": "2026-11-21T08:30:06Z",
+      "inputHash": "c98d7fb1dd0d18c522aca5be080787094727d17f4eaa4b2128ee08cf9ed708d8",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.6,
+        "draw": 3.5,
+        "home": 2.45
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.3784570596797671,
+      "probabilities": {
+        "away": 0.35662299854439594,
+        "draw": 0.264919941775837,
+        "home": 0.3784570596797671
+      },
+      "actualScore": "0 : 0",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.270251
+    },
+    {
+      "matchId": "espn:401877532",
+      "sourceEventId": "401877532",
+      "league": "日职联",
+      "homeTeam": "大阪钢巴",
+      "awayTeam": "冈山绿雉",
+      "kickoffAt": "2026-11-21T07:00:00Z",
+      "lockedAt": "2026-11-21T06:50:06Z",
+      "inputHash": "7f2261408659ae1805f621b73288d3b2765b23bbbc601cc62fe811e718a5983a",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.1,
+        "draw": 3.35,
+        "home": 2.15
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.428203278012576,
+      "probabilities": {
+        "away": 0.29697969281517367,
+        "draw": 0.27481702917225026,
+        "home": 0.428203278012576
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.25104
+    },
+    {
+      "matchId": "espn:401892136",
+      "sourceEventId": "401892136",
+      "league": "澳超",
+      "homeTeam": "CC Mariners",
+      "awayTeam": "珀斯光荣",
+      "kickoffAt": "2026-11-21T06:00:00Z",
+      "lockedAt": "2026-11-21T05:50:05Z",
+      "inputHash": "c008ea883fb1a360e6ad8a4e49b34544802bf388595d83dba9ae1616c1d4e919",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.2,
+        "draw": 3.75,
+        "home": 2.8
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.4215174628663187,
+      "probabilities": {
+        "away": 0.4215174628663187,
+        "draw": 0.24729024488157364,
+        "home": 0.33119229225210756
+      },
+      "actualScore": "0 : 0",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.284646
+    },
+    {
+      "matchId": "espn:401877551",
+      "sourceEventId": "401877551",
+      "league": "日职联",
+      "homeTeam": "川崎前锋",
+      "awayTeam": "福冈黄蜂",
+      "kickoffAt": "2026-11-21T06:00:00Z",
+      "lockedAt": "2026-11-21T05:50:05Z",
+      "inputHash": "6a78c93c3984e89abc5191bdbb036cf388c5ea397504a4ff9f332d08de16640a",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.8,
+        "draw": 3.5,
+        "home": 1.9090909090909092
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.48831775700934577,
+      "probabilities": {
+        "away": 0.24532710280373826,
+        "draw": 0.2663551401869158,
+        "home": 0.48831775700934577
+      },
+      "actualScore": "1 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.130983
+    },
+    {
+      "matchId": "espn:401877549",
+      "sourceEventId": "401877549",
+      "league": "日职联",
+      "homeTeam": "大阪樱花",
+      "awayTeam": "FC东京",
+      "kickoffAt": "2026-11-21T06:00:00Z",
+      "lockedAt": "2026-11-21T05:50:05Z",
+      "inputHash": "6c54f84b083ed56b2e8360ec4f2f24e1ac67e7540a4906956bcaa90be94c5b4f",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 1.5882352941176472,
+        "draw": 4.1,
+        "home": 4.8
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.5819851790001043,
+      "probabilities": {
+        "away": 0.5819851790001043,
+        "draw": 0.22544619559544934,
+        "home": 0.1925686254044463
+      },
+      "actualScore": "0 : 3",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.087548
+    },
+    {
+      "matchId": "espn:401877552",
+      "sourceEventId": "401877552",
+      "league": "日职联",
+      "homeTeam": "町田泽维亚",
+      "awayTeam": "长崎成功丸",
+      "kickoffAt": "2026-11-21T05:00:00Z",
+      "lockedAt": "2026-11-21T04:50:05Z",
+      "inputHash": "8ae6d4bd49c4b1713b579363670f890aa731375dc7e856f649617db58d58e700",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 5.75,
+        "draw": 4.1,
+        "home": 1.5128205128205128
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.612715125868417,
+      "probabilities": {
+        "away": 0.16120487146593804,
+        "draw": 0.22608000266564482,
+        "home": 0.612715125868417
+      },
+      "actualScore": "0 : 0",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.333453
+    },
+    {
+      "matchId": "espn:401877550",
+      "sourceEventId": "401877550",
+      "league": "日职联",
+      "homeTeam": "京都不死鸟",
+      "awayTeam": "浦和红钻",
+      "kickoffAt": "2026-11-21T05:00:00Z",
+      "lockedAt": "2026-11-21T04:50:05Z",
+      "inputHash": "c6f00fbe685a2fe67e7cae32cdffbf39751b7c2206ea21c08e2afb5907bc6786",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.05,
+        "draw": 3.7,
+        "home": 3.05
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.44919892526619565,
+      "probabilities": {
+        "away": 0.44919892526619565,
+        "draw": 0.2488804856204597,
+        "home": 0.30192058911334463
+      },
+      "actualScore": "2 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.250345
+    },
+    {
+      "matchId": "espn:401877533",
+      "sourceEventId": "401877533",
+      "league": "日职联",
+      "homeTeam": "东京绿茵",
+      "awayTeam": "名古屋鲸鱼",
+      "kickoffAt": "2026-11-21T05:00:00Z",
+      "lockedAt": "2026-11-21T04:50:05Z",
+      "inputHash": "3e5380a7f1d9d3836fdbe01e29ccb841c6ecc27b64c9347b73097469785b553d",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.15,
+        "draw": 3.2,
+        "home": 3.3
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.43040554310169143,
+      "probabilities": {
+        "away": 0.43040554310169143,
+        "draw": 0.2891787242714489,
+        "home": 0.2804157326268596
+      },
+      "actualScore": "0 : 0",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.256383
+    },
+    {
+      "matchId": "espn:401877531",
+      "sourceEventId": "401877531",
+      "league": "日职联",
+      "homeTeam": "广岛三箭",
+      "awayTeam": "横滨水手",
+      "kickoffAt": "2026-11-21T05:00:00Z",
+      "lockedAt": "2026-11-21T04:50:05Z",
+      "inputHash": "e1f4c7d17a9d3192ae8d84e8a097d1c5448bcacfc4fe67ecfcd25ae7a19324eb",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 6.5,
+        "draw": 4.9,
+        "home": 1.3773584905660377
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.6697946632278544,
+      "probabilities": {
+        "away": 0.14193036405118542,
+        "draw": 0.18827497272096022,
+        "home": 0.6697946632278544
+      },
+      "actualScore": "2 : 2",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.375889
+    },
+    {
+      "matchId": "espn:401892137",
+      "sourceEventId": "401892137",
+      "league": "澳超",
+      "homeTeam": "奥克兰FC",
+      "awayTeam": "墨尔本胜利",
+      "kickoffAt": "2026-11-21T04:00:00Z",
+      "lockedAt": "2026-11-21T03:50:05Z",
+      "inputHash": "abbfc44a1427fa860813496b6fcaba46d89ff7a511d6eb6a1ce3fff219540d05",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.55,
+        "draw": 3.45,
+        "home": 2.5
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.3696816892530728,
+      "probabilities": {
+        "away": 0.3624330286794832,
+        "draw": 0.26788528206744405,
+        "home": 0.3696816892530728
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.268005
+    },
+    {
+      "matchId": "espn:401877053",
+      "sourceEventId": "401877053",
+      "league": "墨超",
+      "homeTeam": "Juárez",
+      "awayTeam": "Atlas",
+      "kickoffAt": "2026-11-21T03:00:00Z",
+      "lockedAt": "2026-11-21T02:50:05Z",
+      "inputHash": "82605b8a8917b0a8e41f6a826cb2f80cd65917038ab7a9df3192fbd1f04f0427",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.05,
+        "draw": 3.45,
+        "home": 3.35
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.45327973330718707,
+      "probabilities": {
+        "away": 0.45327973330718707,
+        "draw": 0.26934013138542995,
+        "home": 0.2773801353073831
+      },
+      "actualScore": "3 : 3",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.272089
+    },
+    {
+      "matchId": "espn:401877052",
+      "sourceEventId": "401877052",
+      "league": "墨超",
+      "homeTeam": "Tijuana",
+      "awayTeam": "Atlante",
+      "kickoffAt": "2026-11-21T03:00:00Z",
+      "lockedAt": "2026-11-21T02:50:05Z",
+      "inputHash": "36f1aa086060beb7247e4a9e0bbf223f905853b51d74fb1bc7426b72e2bd232d",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 4.7,
+        "draw": 4.2,
+        "home": 1.5882352941176472
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5827255678266305,
+      "probabilities": {
+        "away": 0.19691602417170248,
+        "draw": 0.22035840800166703,
+        "home": 0.5827255678266305
+      },
+      "actualScore": "1 : 0",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.087151
+    },
+    {
+      "matchId": "espn:401877054",
+      "sourceEventId": "401877054",
+      "league": "墨超",
+      "homeTeam": "普埃布拉",
+      "awayTeam": "马德里竞技",
+      "kickoffAt": "2026-11-21T01:00:00Z",
+      "lockedAt": "2026-11-21T00:50:05Z",
+      "inputHash": "f039ee43acf74be494c4516ec9d6ec98542a6de811071b56d4960288f3b95eca",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.65,
+        "draw": 3.4,
+        "home": 2.45
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.37805517675443195,
+      "probabilities": {
+        "away": 0.3495227105842862,
+        "draw": 0.27242211266128186,
+        "home": 0.37805517675443195
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.26482
+    },
+    {
+      "matchId": "espn:401933760",
+      "sourceEventId": "401933760",
+      "league": "阿甲",
+      "homeTeam": "萨斯菲尔德",
+      "awayTeam": "科尔多瓦",
+      "kickoffAt": "2026-11-20T23:00:00Z",
+      "lockedAt": "2026-11-20T22:50:05Z",
+      "inputHash": "8920214f433629765e48bd3849fb1423e98283fe3c8930065ca478c6d88a39f0",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.35,
+        "draw": 3.1,
+        "home": 2.15
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.42820327801257607,
+      "probabilities": {
+        "away": 0.2748170291722503,
+        "draw": 0.2969796928151737,
+        "home": 0.42820327801257607
+      },
+      "actualScore": "2 : 2",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.25104
+    },
+    {
+      "matchId": "espn:401880742",
+      "sourceEventId": "401880742",
+      "league": "英甲",
+      "homeTeam": "巴恩斯利",
+      "awayTeam": "谢周三",
+      "kickoffAt": "2026-11-20T20:00:00Z",
+      "lockedAt": "2026-11-20T19:50:05Z",
+      "inputHash": "4f443979b76f63b7850783a93e1384b086837904029be93ded637a2abd1f3a1a",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.2,
+        "draw": 3.85,
+        "home": 2.75
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.4216867469879519,
+      "probabilities": {
+        "away": 0.4216867469879519,
+        "draw": 0.24096385542168677,
+        "home": 0.33734939759036153
+      },
+      "actualScore": "1 : 2",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.168771
+    },
+    {
+      "matchId": "espn:401882805",
+      "sourceEventId": "401882805",
+      "league": "西甲",
+      "homeTeam": "毕尔巴鄂",
+      "awayTeam": "西班牙人",
+      "kickoffAt": "2026-11-20T20:00:00Z",
+      "lockedAt": "2026-11-20T19:50:05Z",
+      "inputHash": "c1b4a3835ef76c61eb79feca08fc60b4dd659402fdf57cc893fbb0dad0614661",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 6.5,
+        "draw": 4.3,
+        "home": 1.4878048780487805
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.6349632913145865,
+      "probabilities": {
+        "away": 0.14533868956919244,
+        "draw": 0.21969801911622108,
+        "home": 0.6349632913145865
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.393964
+    },
+    {
+      "matchId": "espn:401876395",
+      "sourceEventId": "401876395",
+      "league": "法甲",
+      "homeTeam": "特鲁瓦",
+      "awayTeam": "勒阿弗尔",
+      "kickoffAt": "2026-11-20T19:45:00Z",
+      "lockedAt": "2026-11-20T19:35:05Z",
+      "inputHash": "467eb7223f21beaf3188241fff1d4528923cdff91f2cea01eecc066ac18cbc29",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.5,
+        "draw": 3.5,
+        "home": 2
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4666666666666667,
+      "probabilities": {
+        "away": 0.26666666666666666,
+        "draw": 0.26666666666666666,
+        "home": 0.4666666666666667
+      },
+      "actualScore": "3 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.142222
+    },
+    {
+      "matchId": "espn:401883112",
+      "sourceEventId": "401883112",
+      "league": "西乙",
+      "homeTeam": "安道尔",
+      "awayTeam": "莱加内斯",
+      "kickoffAt": "2026-11-20T19:30:00Z",
+      "lockedAt": "2026-11-20T19:20:05Z",
+      "inputHash": "c3fda30f6846695cef987cee9239e3d637411a7bb65e7778f77ee2ee32edba1f",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.8,
+        "draw": 3.45,
+        "home": 1.9090909090909092
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4864399919044728,
+      "probabilities": {
+        "away": 0.24438372799028535,
+        "draw": 0.26917628010524186,
+        "home": 0.4864399919044728
+      },
+      "actualScore": "1 : 3",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.293345
+    },
+    {
+      "matchId": "espn:401884736",
+      "sourceEventId": "401884736",
+      "league": "德甲",
+      "homeTeam": "拜仁慕尼黑",
+      "awayTeam": "科隆",
+      "kickoffAt": "2026-11-20T19:30:00Z",
+      "lockedAt": "2026-11-20T19:20:05Z",
+      "inputHash": "cad0eb49a36ee979d4b66f5270664e5cf32434f0c47eab9b19e69e9d4b88231c",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 16,
+        "draw": 10.5,
+        "home": 1.0714285714285714
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.8554282596835789,
+      "probabilities": {
+        "away": 0.05728314238952537,
+        "draw": 0.0872885979268958,
+        "home": 0.8554282596835789
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.522694
+    },
+    {
+      "matchId": "espn:401877548",
+      "sourceEventId": "401877548",
+      "league": "日职联",
+      "homeTeam": "神户胜利船",
+      "awayTeam": "水户蜀葵",
+      "kickoffAt": "2026-11-20T10:00:00Z",
+      "lockedAt": "2026-11-20T09:50:05Z",
+      "inputHash": "c72ab17c954395f40b8aceb0f44bcb2f0d0cdef03940d09cfdf69fbde9545692",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 7,
+        "draw": 4.3,
+        "home": 1.4081632653061225
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.6541736893462256,
+      "probabilities": {
+        "away": 0.13159762263816197,
+        "draw": 0.21422868801561254,
+        "home": 0.6541736893462256
+      },
+      "actualScore": "1 : 2",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.40932
+    },
+    {
+      "matchId": "espn:401877553",
+      "sourceEventId": "401877553",
+      "league": "日职联",
+      "homeTeam": "柏太阳神",
+      "awayTeam": "千叶市原",
+      "kickoffAt": "2026-11-20T10:00:00Z",
+      "lockedAt": "2026-11-20T09:50:05Z",
+      "inputHash": "17385622f38d2971f53870ae0347e1ccd3e31d20f2a3ee3b6f66bb5731092982",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 5,
+        "draw": 4.2,
+        "home": 1.5555555555555556
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5947136563876652,
+      "probabilities": {
+        "away": 0.18502202643171808,
+        "draw": 0.22026431718061673,
+        "home": 0.5947136563876652
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.355463
+    },
+    {
+      "matchId": "espn:401877534",
+      "sourceEventId": "401877534",
+      "league": "日职联",
+      "homeTeam": "鹿岛鹿角",
+      "awayTeam": "清水心跳",
+      "kickoffAt": "2026-11-20T10:00:00Z",
+      "lockedAt": "2026-11-20T09:50:05Z",
+      "inputHash": "429d42e10e303df40e12b1588d0598e14db34611d10cc68ea3ca4e9ac0b0dc14",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 5.5,
+        "draw": 4.1,
+        "home": 1.526315789473684
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.6061399165310886,
+      "probabilities": {
+        "away": 0.16821107731484752,
+        "draw": 0.22564900615406377,
+        "home": 0.6061399165310886
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.331773
+    },
+    {
+      "matchId": "espn:401892138",
+      "sourceEventId": "401892138",
+      "league": "澳超",
+      "homeTeam": "西悉尼流浪者",
+      "awayTeam": "阿德莱德联",
+      "kickoffAt": "2026-11-20T08:40:00Z",
+      "lockedAt": "2026-11-20T08:30:05Z",
+      "inputHash": "9fce4b5537e9e5ed6d828bc8f5b716efc2a03bd39a932beb44c3bba0322ff055",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 4.2,
+        "draw": 4.1,
+        "home": 1.6666666666666665
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5545298411335338,
+      "probabilities": {
+        "away": 0.22005152425933874,
+        "draw": 0.22541863460712752,
+        "home": 0.5545298411335338
+      },
+      "actualScore": "4 : 2",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.099227
+    },
+    {
+      "matchId": "espn:401933555",
+      "sourceEventId": "401933555",
+      "league": "美职联",
+      "homeTeam": "西雅图海湾人",
+      "awayTeam": "皇家盐湖城",
+      "kickoffAt": "2026-11-20T03:00:00Z",
+      "lockedAt": "2026-11-20T02:50:06Z",
+      "inputHash": "2104a379559db1e42501a5f6741dfeef10cee88f6dde4d0f32b7a549d85ee6cd",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.35,
+        "draw": 3.65,
+        "home": 1.9090909090909092
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.47780215095780676,
+      "probabilities": {
+        "away": 0.27228887842914357,
+        "draw": 0.2499089706130496,
+        "home": 0.47780215095780676
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.288358
+    },
+    {
+      "matchId": "espn:401933535",
+      "sourceEventId": "401933535",
+      "league": "美职联",
+      "homeTeam": "奥兰多城",
+      "awayTeam": "辛辛那提FC",
+      "kickoffAt": "2026-11-20T00:30:00Z",
+      "lockedAt": "2026-11-20T00:20:05Z",
+      "inputHash": "16b08d857f14ff3975c47f0328157345b95b56e462a2f976010239bd4bf04e7b",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.45,
+        "draw": 3.8,
+        "home": 2.4
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.3829699712052653,
+      "probabilities": {
+        "away": 0.37515425750719866,
+        "draw": 0.24187577128753598,
+        "home": 0.3829699712052653
+      },
+      "actualScore": "1 : 3",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.198534
+    },
+    {
+      "matchId": "espn:401841309",
+      "sourceEventId": "401841309",
+      "league": "巴甲",
+      "homeTeam": "圣保罗",
+      "awayTeam": "弗鲁米嫩塞",
+      "kickoffAt": "2026-11-20T00:30:00Z",
+      "lockedAt": "2026-11-20T00:20:05Z",
+      "inputHash": "2de88d865b9e112693302651d6ac9029d0665a28709801e577739780c5dcff5c",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3,
+        "draw": 3.2,
+        "home": 2.3
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4023470243084661,
+      "probabilities": {
+        "away": 0.3084660519698239,
+        "draw": 0.28918692372170995,
+        "home": 0.4023470243084661
+      },
+      "actualScore": "0 : 1",
+      "actualOutcome": "away",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.241244
+    },
+    {
+      "matchId": "espn:401841317",
+      "sourceEventId": "401841317",
+      "league": "巴甲",
+      "homeTeam": "维多利亚",
+      "awayTeam": "布拉干蒂诺红牛",
+      "kickoffAt": "2026-11-19T22:30:00Z",
+      "lockedAt": "2026-11-19T22:20:05Z",
+      "inputHash": "dd6b0d78391b2088784eef731368a4e5c1319727a8dc25e9c1b4a90a8acb60f3",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.45,
+        "draw": 3.3,
+        "home": 2.7
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.3773824650571791,
+      "probabilities": {
+        "away": 0.3773824650571791,
+        "draw": 0.28017789072426935,
+        "home": 0.34243964421855144
+      },
+      "actualScore": "2 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.217768
+    },
+    {
+      "matchId": "espn:401841308",
+      "sourceEventId": "401841308",
+      "league": "巴甲",
+      "homeTeam": "瓦斯科达伽马",
+      "awayTeam": "巴西国际",
+      "kickoffAt": "2026-11-19T22:30:00Z",
+      "lockedAt": "2026-11-19T22:20:05Z",
+      "inputHash": "1f92be819388561d9f50fee00695d26eb9c3cdf3d4003b863229e1b8a8f2a689",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 4.6,
+        "draw": 3.85,
+        "home": 1.6666666666666665
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.557035017823443,
+      "probabilities": {
+        "away": 0.20182428182008805,
+        "draw": 0.24114070035646878,
+        "home": 0.557035017823443
+      },
+      "actualScore": "2 : 1",
+      "actualOutcome": "home",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": true,
+      "brierScore": 0.098367
+    },
+    {
+      "matchId": "espn:401861195",
+      "sourceEventId": "401861195",
+      "league": "欧国联",
+      "homeTeam": "波兰",
+      "awayTeam": "瑞典",
+      "kickoffAt": "2026-11-17T19:45:00Z",
+      "lockedAt": "2026-11-17T19:35:00Z",
+      "inputHash": "d7d343ba63c91e49987898671216dc05382ecc03f7e4383b687a3cc52fe42eba",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.95,
+        "draw": 3.55,
+        "home": 2.15
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.42836690868186933,
+      "probabilities": {
+        "away": 0.3121996114122098,
+        "draw": 0.25943347990592086,
+        "home": 0.42836690868186933
+      },
+      "actualScore": "1 : 1",
+      "actualOutcome": "draw",
+      "settledAt": "2026-11-21T16:04:33Z",
+      "isHit": false,
+      "brierScore": 0.276469
+    }
+  ],
+  "schemaVersion": "v1",
+  "upcomingLocked": [
+    {
+      "matchId": "espn:401933758",
+      "sourceEventId": "401933758",
+      "league": "阿甲",
+      "homeTeam": "Def. y Jus.",
+      "awayTeam": "Barracas",
+      "kickoffAt": "2026-11-21T18:00:00Z",
+      "lockedAt": "2026-11-21T17:50:40Z",
+      "inputHash": "b0ba17c419893e32c6419c1039326974437df894839b524937d482b5b3ad352a",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 3.65,
+        "draw": 3.05,
+        "home": 2.1
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4377966221507336,
+      "probabilities": {
+        "away": 0.26929096438895583,
+        "draw": 0.2929124134603105,
+        "home": 0.4377966221507336
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0756,
+        "homeElo": 1474.3,
+        "awayElo": 1500,
+        "lambdaHome": 1.45,
+        "lambdaAway": 1.27,
+        "homeRestHours": 334
+      }
+    },
+    {
+      "matchId": "espn:401875543",
+      "sourceEventId": "401875543",
+      "league": "荷甲",
+      "homeTeam": "费耶诺德",
+      "awayTeam": "Excelsior",
+      "kickoffAt": "2026-11-21T17:45:00Z",
+      "lockedAt": "2026-11-21T17:35:42Z",
+      "inputHash": "e2390018f313cdc0b4ab09612f94382fd640d2d2638ebfe6009b06986882bcae",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 10.5,
+        "draw": 7.5,
+        "home": 1.1818181818181819
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.7210103399065444,
+      "probabilities": {
+        "away": 0.13641741291930273,
+        "draw": 0.14257224717415284,
+        "home": 0.7210103399065444
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.1314,
+        "homeElo": 1474.3,
+        "awayElo": 1474.3,
+        "lambdaHome": 1.74,
+        "lambdaAway": 1.41,
+        "homeRestHours": 319,
+        "awayRestHours": 334
+      }
+    },
+    {
+      "matchId": "espn:401875544",
+      "sourceEventId": "401875544",
+      "league": "荷甲",
+      "homeTeam": "乌得勒支",
+      "awayTeam": "坎布尔",
+      "kickoffAt": "2026-11-21T17:45:00Z",
+      "lockedAt": "2026-11-21T17:35:42Z",
+      "inputHash": "7eac13f47d6d54b2ba53ec2c9ec484a464bd7212caa6f8c53866d93db4c87eab",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 3.3,
+        "draw": 3.85,
+        "home": 1.9523809523809523
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.46854268642941405,
+      "probabilities": {
+        "away": 0.2913486815079151,
+        "draw": 0.24010863206267083,
+        "home": 0.46854268642941405
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0739,
+        "homeElo": 1474.3,
+        "awayElo": 1500,
+        "lambdaHome": 1.63,
+        "lambdaAway": 1.42,
+        "homeRestHours": 311
+      }
+    },
+    {
+      "matchId": "espn:401878337",
+      "sourceEventId": "401878337",
+      "league": "苏超",
+      "homeTeam": "Dundee",
+      "awayTeam": "哈茨",
+      "kickoffAt": "2026-11-21T17:45:00Z",
+      "lockedAt": "2026-11-21T17:35:42Z",
+      "inputHash": "b48e96bf887edfcba53220b558998b1337e7cdf05d7dc30bc08460d911617f17",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 1.9523809523809523,
+        "draw": 3.7,
+        "home": 3.35
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.4406379312666622,
+      "probabilities": {
+        "away": 0.4406379312666622,
+        "draw": 0.24854891951729233,
+        "home": 0.3108131492160455
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0799,
+        "homeElo": 1474.3,
+        "awayElo": 1500,
+        "lambdaHome": 1.54,
+        "lambdaAway": 1.34,
+        "homeRestHours": 339
+      }
+    },
+    {
+      "matchId": "espn:401884729",
+      "sourceEventId": "401884729",
+      "league": "德甲",
+      "homeTeam": "沙尔克04",
+      "awayTeam": "斯图加特",
+      "kickoffAt": "2026-11-21T17:30:00Z",
+      "lockedAt": "2026-11-21T17:20:42Z",
+      "inputHash": "8e98a9ff6c8f74ae824026a7ffe10916c35c6ec9805b4d2967fd21587ca4bcd5",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 1.7692307692307692,
+        "draw": 3.9,
+        "home": 3.65
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.47520369836157517,
+      "probabilities": {
+        "away": 0.47520369836157517,
+        "draw": 0.237449173010644,
+        "home": 0.28734712862778083
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0982,
+        "homeElo": 1500,
+        "awayElo": 1525.7,
+        "lambdaHome": 1.45,
+        "lambdaAway": 1.27,
+        "awayRestHours": 336
+      }
+    },
+    {
+      "matchId": "espn:401879232",
+      "sourceEventId": "401879232",
+      "league": "英超",
+      "homeTeam": "纽卡斯尔",
+      "awayTeam": "阿森纳",
+      "kickoffAt": "2026-11-21T17:30:00Z",
+      "lockedAt": "2026-11-21T17:20:42Z",
+      "inputHash": "a32eb6fca0c48463ba4b852b46d74bc084b59868da7fdd89e8531cd3bb0eaf2c",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 1.5882352941176472,
+        "draw": 4.2,
+        "home": 5.25
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.5302965909705867,
+      "probabilities": {
+        "away": 0.5302965909705867,
+        "draw": 0.2335762096452793,
+        "home": 0.23612719938413407
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0637,
+        "homeElo": 1500,
+        "awayElo": 1525.7,
+        "lambdaHome": 1.41,
+        "lambdaAway": 1.23,
+        "homeRestHours": 339,
+        "awayRestHours": 339
+      }
+    },
+    {
+      "matchId": "espn:401882797",
+      "sourceEventId": "401882797",
+      "league": "西甲",
+      "homeTeam": "塞维利亚",
+      "awayTeam": "贝蒂斯",
+      "kickoffAt": "2026-11-21T17:30:00Z",
+      "lockedAt": "2026-11-21T17:20:42Z",
+      "inputHash": "43ea7f9c21bf1df29e5f72314a425e20a7422a36d276b424b07986710f1c6447",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 2.25,
+        "draw": 3.55,
+        "home": 3.05
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.3876180878634523,
+      "probabilities": {
+        "away": 0.3876180878634523,
+        "draw": 0.2622499343226799,
+        "home": 0.3501319778138678
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0512,
+        "homeElo": 1500,
+        "awayElo": 1500,
+        "lambdaHome": 1.63,
+        "lambdaAway": 1.26
+      }
+    },
+    {
+      "matchId": "espn:401874967",
+      "sourceEventId": "401874967",
+      "league": "意甲",
+      "homeTeam": "帕尔马",
+      "awayTeam": "罗马",
+      "kickoffAt": "2026-11-21T17:00:00Z",
+      "lockedAt": "2026-11-21T16:50:42Z",
+      "inputHash": "c7457166ddcf2e4258b4668cd9badb1834612abcddd88f88231a6c7679e7d3d1",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 1.2777777777777777,
+        "draw": 5.25,
+        "home": 8.5
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.6581511870540685,
+      "probabilities": {
+        "away": 0.6581511870540685,
+        "draw": 0.18390694665383317,
+        "home": 0.1579418662920983
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.1311,
+        "homeElo": 1474.3,
+        "awayElo": 1525.7,
+        "lambdaHome": 1.36,
+        "lambdaAway": 1.51,
+        "homeRestHours": 336,
+        "awayRestHours": 333
+      }
+    },
+    {
+      "matchId": "espn:401876398",
+      "sourceEventId": "401876398",
+      "league": "法甲",
+      "homeTeam": "尼斯",
+      "awayTeam": "巴黎圣日耳曼",
+      "kickoffAt": "2026-11-21T16:15:00Z",
+      "lockedAt": "2026-11-21T16:05:00Z",
+      "inputHash": "35ddb53708b40e055ca6a4ab5d5497a344c209380a7c61cb5db0de8b7c0b6f14",
+      "modelId": "hybrid-xg-elo-v2",
+      "method": "Power去水市场共识(72%)+滚动Elo/Dixon-Coles泊松融合(28%)",
+      "inputSource": "ESPN scoreboard odds + rolling ledger Elo / DraftKings",
+      "inputOdds": {
+        "away": 1.4761904761904763,
+        "draw": 5,
+        "home": 5.75
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.5514150334438472,
+      "probabilities": {
+        "away": 0.5514150334438472,
+        "draw": 0.20569474852116482,
+        "home": 0.24289021803498795
+      },
+      "isHit": false,
+      "modelBreakdown": {
+        "devigPowerK": 1.0599,
+        "homeElo": 1525.7,
+        "awayElo": 1525.7,
+        "lambdaHome": 1.55,
+        "lambdaAway": 1.12,
+        "homeRestHours": 312,
+        "awayRestHours": 332
+      }
+    },
+    {
+      "matchId": "espn:401888244",
+      "sourceEventId": "401888244",
+      "league": "土超",
+      "homeTeam": "Kocaelispor",
+      "awayTeam": "费内巴切",
+      "kickoffAt": "2026-11-21T16:00:00Z",
+      "lockedAt": "2026-11-21T15:50:13Z",
+      "inputHash": "6df7c670d567cc81033dd2f8ee2077240171fc502ebf4c43b262b4af162a3c93",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 1.5128205128205128,
+        "draw": 4.1,
+        "home": 5.5
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.6082581180620396,
+      "probabilities": {
+        "away": 0.6082581180620396,
+        "draw": 0.22443545319362312,
+        "home": 0.16730642874433724
+      },
+      "isHit": false
+    },
+    {
+      "matchId": "espn:401875541",
+      "sourceEventId": "401875541",
+      "league": "荷甲",
+      "homeTeam": "奈梅亨",
+      "awayTeam": "埃因霍温",
+      "kickoffAt": "2026-11-21T15:30:00Z",
+      "lockedAt": "2026-11-21T15:20:10Z",
+      "inputHash": "407bb03919a677369d2aaba1a1ae5282efa84d24caea94d123d4269599691b54",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 1.7142857142857144,
+        "draw": 4.3,
+        "home": 3.8
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.5405993005009926,
+      "probabilities": {
+        "away": 0.5405993005009926,
+        "draw": 0.21552131581434922,
+        "home": 0.2438793836846583
+      },
+      "isHit": false
+    },
+    {
+      "matchId": "espn:401882799",
+      "sourceEventId": "401882799",
+      "league": "西甲",
+      "homeTeam": "巴列卡诺",
+      "awayTeam": "瓦伦西亚",
+      "kickoffAt": "2026-11-21T15:15:00Z",
+      "lockedAt": "2026-11-21T15:05:10Z",
+      "inputHash": "2ae10cf927613b9f122ab858601e02d5b1425d75d37a40460a1b1266a47ca651",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.8,
+        "draw": 3.45,
+        "home": 1.9523809523809523
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.4808404359368451,
+      "probabilities": {
+        "away": 0.24704834427832892,
+        "draw": 0.2721112197848261,
+        "home": 0.4808404359368451
+      },
+      "isHit": false
+    },
+    {
+      "matchId": "espn:401878334",
+      "sourceEventId": "401878334",
+      "league": "苏超",
+      "homeTeam": "基尔马诺克",
+      "awayTeam": "Aberdeen",
+      "kickoffAt": "2026-11-21T15:00:00Z",
+      "lockedAt": "2026-11-21T14:50:10Z",
+      "inputHash": "50efa0fce6130659b914cb8870590460548a3a45608b83cab87e8e4ffada297e",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 2.5,
+        "draw": 3.35,
+        "home": 2.65
+      },
+      "predictedOutcome": "away",
+      "predictedProb": 0.3717935294733536,
+      "probabilities": {
+        "away": 0.3717935294733536,
+        "draw": 0.27745785781593546,
+        "home": 0.35074861271071095
+      },
+      "isHit": false
+    },
+    {
+      "matchId": "espn:401879236",
+      "sourceEventId": "401879236",
+      "league": "英超",
+      "homeTeam": "切尔西",
+      "awayTeam": "利兹联",
+      "kickoffAt": "2026-11-21T15:00:00Z",
+      "lockedAt": "2026-11-21T14:50:10Z",
+      "inputHash": "e8a6507e37d4a4e5eb39b9556ac9e41597f6242eb701835ae6fc1944b48af0ed",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 3.9,
+        "draw": 3.7,
+        "home": 1.8695652173913042
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5038637295237518,
+      "probabilities": {
+        "away": 0.2415400264160683,
+        "draw": 0.25459624406018005,
+        "home": 0.5038637295237518
+      },
+      "isHit": false
+    },
+    {
+      "matchId": "espn:401878756",
+      "sourceEventId": "401878756",
+      "league": "英超",
+      "homeTeam": "维拉",
+      "awayTeam": "桑德兰",
+      "kickoffAt": "2026-11-21T15:00:00Z",
+      "lockedAt": "2026-11-21T14:50:10Z",
+      "inputHash": "c4c82ea10352c81d84cbec7b33ac9899724b029a1bc159a8bbe4a61abf31a32a",
+      "modelId": "market-implied-v1",
+      "method": "同场赛前欧赔去水归一化",
+      "inputSource": "ESPN scoreboard odds / DraftKings",
+      "inputOdds": {
+        "away": 4.4,
+        "draw": 3.85,
+        "home": 1.7407407407407407
+      },
+      "predictedOutcome": "home",
+      "predictedProb": 0.5411948457633736,
+      "probabilities": {
+        "away": 0.21410907197709225,
+        "draw": 0.244696082259534,
+        "home": 0.5411948457633736
+      },
+      "isHit": false
+    }
+  ]
+}

@@ -1,91 +1,54 @@
-# AsianScore Open Sports Prediction Ledger & Bivariate Poisson xG Toolkit
+# AsianScore Verifiable Football & NBA xG Prediction Ledger (CC BY 4.0)
 
-[![Live Ledger](https://img.shields.io/badge/Live_SHA256_Ledger-asianscore.com-10b981)](https://asianscore.com/models.html#ledger)
-[![Interactive Simulator](https://img.shields.io/badge/Free_xG_Simulator-Tools_Lab-2563eb)](https://asianscore.com/tools.html)
+[![Live Audit Dashboard](https://img.shields.io/badge/Live_Audit-asianscore.com-10b981)](https://asianscore.com/models.html#ledger)
+[![Open REST API](https://img.shields.io/badge/REST_API-JSON_No_Key-3b82f6)](https://asianscore.com/api/ledger)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-Open, cryptographically verifiable dataset of pre-match football & NBA quantitative forecasts published by [AsianScore](https://asianscore.com/).
+Open, cryptographically verifiable pre-match football & NBA probability benchmark maintained by **[AsianScore](https://asianscore.com/)**. Every prediction is locked **8–10 minutes before kickoff** with an immutable **SHA-256 input fingerprint** and automatically settled against official final scores via Brier Score.
 
-Every match projection is hashed with **SHA-256 prior to kickoff** (`inputHash`) and evaluated post-match using proper scoring rules (**Brier Score**), preventing hindsight edits or cherry-picking.
+## Latest Verified Benchmark Snapshot (`2026-11-22`)
 
-## Live Snapshot (2026-11-21 13:34 UTC)
+- **Total Pre-Match Locked**: **355 matches**
+- **Officially Settled & Audited**: **253 matches**
+- **Top-1 Hit Rate**: **56.92%** (144 / 253)
+- **Mean Brier Score**: **0.1783** (lower is better; uniform 3-way baseline = 0.2222)
+- **Active Quant Model (`hybrid-xg-elo-v2`)**: 72% Power De-Vig market consensus + 28% Rolling Empirical-Bayes Elo & Dixon-Coles Bivariate Poisson xG + schedule rest-hours fatigue adjustment.
 
-| Metric | Value |
-| :--- | :--- |
-| **Total Pre-Match SHA-256 Locked Forecasts** | `310` |
-| **Settled & Verified Matches** | `206` |
-| **Correct Primary Outcome Predictions** | `127` (`61.65%`) |
-| **Mean Brier Score (lower is better)** | `0.166` |
-| **Covered Leagues** | `12` |
+### League Breakdown (Live Snapshot)
 
-## Files Included
+| League | Settled | Correct | Hit Rate | Avg Brier |
+| :--- | :---: | :---: | :---: | :---: |
+| 欧国联 | 33 | 21 | 63.64% | 0.1698 |
+| 非预赛 | 23 | 15 | 65.22% | 0.135 |
+| NBA | 22 | 17 | 77.27% | 0.159 |
+| 美职联 | 17 | 11 | 64.71% | 0.1804 |
+| 日职联 | 15 | 4 | 26.67% | 0.2553 |
+| 英冠 | 14 | 7 | 50% | 0.2071 |
+| 意甲 | 11 | 7 | 63.64% | 0.1552 |
+| 西甲 | 11 | 6 | 54.55% | 0.1847 |
+| 英超 | 10 | 4 | 40% | 0.2112 |
+| 德甲 | 9 | 7 | 77.78% | 0.1435 |
 
-1. `asianscore_prediction_ledger.csv` — Recent settled + upcoming locked match forecasts with `probHome`/`probDraw`/`probAway`, 64-char SHA-256 `inputHash`, final `actualScore`, and `brierScore`.
-2. `asianscore_league_accuracy.csv` — Aggregated hit rate and mean Brier score across 12 leagues.
-3. `poisson_xg_demo.py` — Zero-dependency Python implementation of the **Bivariate Poisson + Dixon-Coles** expected goals (xG) scoreline matrix model.
-4. `devig_and_audit.py` — Zero-dependency Proportional & Power market de-vigging plus CSV SHA-256 / Brier Score auditor.
+## Free Open REST API Endpoints (Zero API Key, CORS Enabled)
 
-## Public REST API Documentation (No Auth, HTTPS, CORS `*`)
-
-The live prediction ledger is exposed as a free, keyless JSON endpoint:
-
-- **Endpoint:** `GET https://asianscore.com/api/ledger`
-- **Authentication:** None (`No`)
-- **HTTPS:** Yes
-- **CORS:** `Access-Control-Allow-Origin: *` (`Yes`)
-
-### Example Request
-
-```bash
-curl -s "https://asianscore.com/api/ledger" | head -c 600
-```
-
-### Response Schema
-
-```json
-{
-  "accuracy": {
-    "totalLocked": 302,
-    "sampleSize": 206,
-    "correct": 127,
-    "hitRatePct": 61.65,
-    "averageBrierScore": 0.166
-  },
-  "byLeague": [
-    { "league": "NBA", "settled": 22, "correct": 17, "hitRatePct": 77.27, "avgBrier": 0.159 }
-  ],
-  "recentSettled": [
-    {
-      "matchId": "espn:401841175",
-      "league": "巴甲",
-      "kickoffAt": "2026-11-14T23:30:00Z",
-      "lockedAt": "2026-11-14T23:20:05Z",
-      "inputHash": "6808bd38f6a294b69dfc11b3aa8a627192eb8c444b08952071a2de2c8f37b0b0",
-      "probHome": 0.184033,
-      "probDraw": 0.224431,
-      "probAway": 0.591536,
-      "actualScore": "0 : 2",
-      "isHit": true,
-      "brierScore": 0.083694
-    }
-  ],
-  "upcomingLocked": []
-}
-```
-
-## Live Open API & Free Web Tools (No Login Required)
-
-- **Live JSON Ledger API (CORS `*`)**: `https://asianscore.com/api/ledger`
-- **Interactive xG Poisson, De-Vig & NBA Pace Simulator**: https://asianscore.com/tools.html
-- **Free Embeddable Live Scores & Ledger Widget**: https://asianscore.com/tools.html#embed
-- **Live Match Telemetry & Analytics Portal**: https://asianscore.com/
-
-## Quick Start
+- **Public SHA-256 Audit Ledger**: `GET https://asianscore.com/api/ledger` ([Interactive Dashboard](https://asianscore.com/models.html#ledger))
+- **Global Live Scores (22+ Leagues)**: `GET https://asianscore.com/api/scores` ([Live Scoreboard](https://asianscore.com/scores.html))
+- **Live Match Telemetry (Events, Stats, Lineups, NBA Boxscore)**: `GET https://asianscore.com/api/match/telemetry?id=<matchId>`
+- **Interactive Client-Side Quant Calculators (Bivariate Poisson xG, De-Vig, Half-Kelly, Free Shadow DOM Widget)**: [https://asianscore.com/tools.html](https://asianscore.com/tools.html)
 
 ```bash
-python3 poisson_xg_demo.py
-python3 devig_and_audit.py
+curl -s https://asianscore.com/api/ledger | jq '.accuracy'
 ```
 
-## License
+## Official Mirrors & Publications
 
-Dataset released under **CC BY 4.0** (attribution to [AsianScore](https://asianscore.com/)); Python demo code released under **MIT License**.
+- **Main Platform**: [https://asianscore.com/](https://asianscore.com/)
+- **Kaggle Dataset**: [https://www.kaggle.com/datasets/asianscore/asianscore-football-and-nba-xg-prediction-ledger](https://www.kaggle.com/datasets/asianscore/asianscore-football-and-nba-xg-prediction-ledger)
+- **Substack Quantitative Audit**: [https://asianscore.substack.com/](https://asianscore.substack.com/)
+- **Dev.to Engineering Blog**: [https://dev.to/asianscore_lab](https://dev.to/asianscore_lab)
+- **Medium Engineering**: [https://medium.com/@8748887](https://medium.com/@8748887)
+- **Peerlist**: [https://peerlist.io/asianscore](https://peerlist.io/asianscore)
+
+## License & Citation
+
+Published under **CC BY 4.0**. If you use this benchmark in research, sports analytics tutorials, or calibration comparisons, please link to `https://asianscore.com/models.html#ledger`.
