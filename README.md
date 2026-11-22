@@ -1,5 +1,6 @@
 # AsianScore Verifiable Football & NBA xG Prediction Ledger (CC BY 4.0)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24441036.svg)](https://doi.org/10.5281/zenodo.24441036)
 [![Live Audit Dashboard](https://img.shields.io/badge/Live_Audit-asianscore.com-10b981)](https://asianscore.com/models.html#ledger)
 [![Open REST API](https://img.shields.io/badge/REST_API-JSON_No_Key-3b82f6)](https://asianscore.com/api/ledger)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)

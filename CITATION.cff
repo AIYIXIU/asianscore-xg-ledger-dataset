@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this dataset or calibration scripts, please cite this Zenodo record."
+type: dataset
+title: "AsianScore Verifiable Football & NBA Pre-Match xG Prediction Ledger (SHA-256 Audited Dataset)"
+version: 1.0.0
+doi: 10.5281/zenodo.24441036
+date-released: 2026-11-22
+url: "https://asianscore.com/models.html#ledger"
+repository-code: "https://github.com/AIYIXIU/asianscore-xg-ledger-dataset"
+license: CC-BY-4.0
+authors:
+  - name: "AsianScore Quantitative Research Lab"
+    website: "https://asianscore.com/"
+keywords:
+  - sports-analytics
+  - expected-goals
+  - brier-score
+  - probability-calibration
+  - dixon-coles
+  - sha256-audit-ledger
